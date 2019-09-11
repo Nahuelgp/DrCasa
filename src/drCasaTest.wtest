@@ -1,0 +1,11 @@
+import drCasa.*
+
+describe "DrCasa"{
+	test "test"{
+		var frank = new Persona()
+		var malariaPulenta = new EnfermedadInfecciosa()
+		malariaPulenta.cantCelAmenazadas(800)
+		frank.contraerEnfermedad(malariaPulenta)
+		assert.that(frank.tieneEnfermedad(malariaPulenta))
+	}
+}
